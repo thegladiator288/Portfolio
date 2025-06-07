@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: white;
+        }
+
+        header {
+            background-color: white;
+            height: 80px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 12px 30px;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: blue;
+            text-align: center;
+
+        }
+
+        .btn {
+            padding: 12px;
+            color: blue;
+            border: 2px solid gray;
+            cursor: pointer;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 100px 0;
+            align-items: center;
+        }
+
+        .firstsection>div {
+            width: 40%;
+        }
+
+        .firstsection .text {
+            max-width: 370px;
+            color: #000;
+            font-size: 20px;
+            line-height: 1.6;
+            font-weight: 400;
+        }
+
+        .leftsection {
+            font-size: 3rem;
+        }
+
+        .rightsection img {
+            width: 110%;
+            margin: 5px 0;
+        }
+
+        .btn2 {
+            padding: 12px;
+            background-color: blue;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .image-top {
+            padding: 0 25px;
+            margin-left: 12px;
+            align-items: center;
+            width: 100px;
+            position: relative;
+            top: -20px;
+        }
+
+        .thirdsection {
+            display: flex;
+            background-color: lightpink;
+            max-width: 90vw;
+            /* height: 80vh; */
+            margin: 30px auto;
+        }
+
+        .thirdsection>div {
+            color: black;
+            margin: 30px;
+            padding: 70px;
+            font-size: 3rem;
+        }
+
+        .thirdsection .text-2 {
+            max-width: 370px;
+            color: #000;
+            font-size: 20px;
+            line-height: 1.6;
+            font-weight: 400;
+        }
+
+        .fourthsection {
+            display: flex;
+            background-color: lightpink;
+            max-width: 90vw;
+            margin: -32px auto;
+
+        }
+
+        .fourthsection .container2 {
+            padding: 30px;
+            background-color: #fff;
+            width: 350px;
+            height: 250px;
+            margin: -150px 40px;
+        }
+
+        .fourthsection .text-3 {
+            max-width: 370px;
+            margin: 20px 0;
+            color: #000;
+            font-size: 20px;
+            line-height: 1.6;
+            font-weight: 400;
+        }
+
+        .feature {
+            font-family: "Open Sans", sans-serif;
+            margin-bottom: 15px;
+            font-size: 15px;
+            line-height: 1.5;
+            padding: 0 60px;
+
+        }
+
+        .center {
+            max-width: 150px;
+            padding: 0 60px;
+        }
+
+        .fifthsection {
+            display: flex;
+            background-color: rgb(211, 169, 211);
+            max-width: 90vw;
+            height: 80vh;
+            margin: 100px auto;
+        }
+
+        .fifthsection>div {
+            color: black;
+            margin: 5px 0;
+            padding: 70px;
+            font-size: 3rem;
+        }
+
+        .fifthsection .text-2 {
+            max-width: 370px;
+            color: #000;
+            font-size: 20px;
+            line-height: 1.6;
+            font-weight: 400;
+        }
+
+        .sixthsection {
+            display: flex;
+            background-color: rgb(211, 169, 211);
+            max-width: 90vw;
+            /* height: 30vh; */
+            margin: -100px auto;
+        }
+
+        .sixthsection .container7 {
+            padding: 30px;
+            background-color: #fff;
+            width: 350px;
+            height: 200px;
+            margin: -120px 40px;
+        }
+
+        .sixthsection .text-3 {
+            max-width: 370px;
+            margin: 20px 0;
+            color: #000;
+            font-size: 20px;
+            line-height: 1.6;
+            font-weight: 400;
+        }
+
+        .seventhsection {
+            display: flex;
+            background-color: skyblue;
+            max-width: 90vw;
+            height: 80vh;
+            margin: 170px auto;
+        }
+
+        .seventhsection>div {
+            color: black;
+            margin: 5px 0;
+            padding: 70px;
+            font-size: 3rem;
+        }
+
+        .seventhsection .text-2 {
+            max-width: 370px;
+            color: #000;
+            font-size: 20px;
+            line-height: 1.6;
+            font-weight: 400;
+        }
+
+        .eigthsection {
+            display: flex;
+            background-color: skyblue;
+            max-width: 90vw;
+            height: 30vh;
+            margin: -200px auto;
+        }
+
+        .eigthsection .container12 {
+            padding: 30px;
+            background-color: #fff;
+            width: 350px;
+            height: 220px;
+            margin: -120px 40px;
+        }
+
+        .eigthsection .text-3 {
+            max-width: 370px;
+            margin: 20px 0;
+            color: #000;
+            font-size: 20px;
+            line-height: 1.6;
+            font-weight: 400;
+        }
+
+        .ninthsection {
+            background-color: #fff;
+            margin: 360px 80px;
+        }
+
+        .ninthsection>div {
+            color: gray;
+        }
+
+        .ninthsection .container17 {
+            color: black;
+            font-size: 3rem;
+            margin: 10px 0;
+        }
+
+        .ninthsection .center-2 {
+            max-width: 500px;
+            font-size: 20px;
+            color: rgb(104, 92, 92);
+            margin: 10px 0;
+        }
+
+        .tenthsection {
+            display: flex;
+        }
+
+        .tenthsection>div {
+            margin: -240px 70px;
+            padding: 20px 30px;
+            width: 30vw;
+            height: 33vh;
+            background-color: rgb(160, 171, 175);
+        }
+
+        .tenthsection .center-3 {
+            padding: 10px 0;
+            font-size: 1.2rem;
+        }
+
+        footer {
+            background-color: #000;
+            width: 100vw;
+            height: 100vh;
+            margin: 150px 0;
+        }
+
+        .footer {
+            display: flex;
+        }
+
+        footer .footer-first {
+            color: white;
+            font-size: 4rem;
+            padding: 130px 0;
+            width: 35vw;
+
+        }
+
+        footer .text-4 {
+            font-size: 20px;
+            width: 40vw;
+            margin: 25px 0;
+            color: rgb(236, 221, 221);
+        }
+
+        .btn3 {
+            padding: 12px;
+            background-color: blue;
+            color: white;
+            /* border: 2px solid white; */
+            /* border-radius: 6px; */
+            font-size: 20px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Header(start) -->
+    <header>
+        <nav>
+            <div class="left">
+                <img src="https://assets.website-files.com/5fa1c3e22aeefa229c6a335f/5fa1e73ad0ad7103f8785c24_5d3e2e20cb7dfd8475f5e989_webflow-logo-black.svg"
+                    alt="" width="100px">
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href=""><b>#MadeInWebFlow</b></a></li>
+                    <div class="buttons">
+                        <button class="btn">Get Startet - it's free</button>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Header(End) -->
+
+    <!-- Main(start) -->
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                <h1>The modern way to build for the web</h1>
+
+                <div class="text">Webflow empowers designers to build professional, custom websites in a completely
+                    visual canvas.</div>
+
+                <div class="buttons2">
+                    <button class="btn2">Get Startet - it's free</button>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img class="image-top"
+                    src="https://assets.website-files.com/5fa1c3e22aeefa229c6a335f/5fa1e4424b709c9ae8a664d0_5f2db973311dff83f9829e34_webflow-home-hero.png"
+                    alt="" width="550px">
+            </div>
+        </section>
+
+        <section class="secondsection">
+            <div class="logos">
+                <img class="image-top"
+                    src="https://assets.website-files.com/5fa1c3e22aeefa229c6a335f/5fa1dc12dcf6cccc12e1ac68_zendesk.svg"
+                    alt="">
+
+                <img class="image-top"
+                    src="https://assets.website-files.com/5fa1c3e22aeefa229c6a335f/5fa1e561e8121da679d4dd0b_rakuten-logo-black.svg"
+                    alt="">
+
+                <img class="image-top"
+                    src="https://assets.website-files.com/5fa1c3e22aeefa229c6a335f/5fa1e561634be14edfb168c7_dell-word.svg"
+                    alt="">
+
+                <img class="image-top"
+                    src="https://assets.website-files.com/5fa1c3e22aeefa229c6a335f/5fa1e561370f8241aded0f81_upwork-black-webclip.svg"
+                    alt="">
+
+                <img class="image-top"
+                    src="https://assets.website-files.com/5fa1c3e22aeefa229c6a335f/5fa1dd226ee73d6d1d966a6e_Lattice.svg"
+                    alt="">
+
+                <img class="image-top"
+                    src="https://assets.website-files.com/5fa1c3e22aeefa229c6a335f/5fa1e561fe2b8b672998612f_getaround.svg"
+                    alt="">
+
+                <img class="image-top"
+                    src="https://assets.website-files.com/5fa1c3e22aeefa229c6a335f/5fa1e56162c25bdb496e5424_hellosign.svg"
+                    alt="">
+
+                <img class="image-top"
+                    src="https://assets.website-files.com/5fa1c3e22aeefa229c6a335f/5fa1e561cae5626ae79cee7d_petal-black.svg"
+                    alt="">
+            </div>
+        </section>
+
+        <section class="thirdsection">
+            <div class="container">
+                <h2>Build</h2>
+                <div class="text-2">Build production-ready experiences without coding.</div>
+            </div>
+
+            <div class="image-top2">
+                <img src="https://assets.website-files.com/5fa1c3e22aeefa229c6a335f/5fa1e0b5e480ab14903fa56a_Screenshot%202020-11-03%20at%2017.58.45-p-800.png"
+                    alt="" width="500px">
+            </div>
+        </section>
+
+        <section class="fourthsection">
+            <div class="container2">
+                <img src="https://assets.website-files.com/5fa1c3e22aeefa229c6a335f/5fa1dc12dcf6cccc12e1ac68_zendesk.svg"
+                    alt="" width="200px">
+
+                <div class="text-3">“Webflow helped our brand team create a platform that enables all Zendesk employees
+                    to accurately and consistently represent the company in an easy, efficient and scalable way.”</div>
+            </div>
+
+            <div class="container3">
+                <h3 class="feature">The Designer</h3>
+                <p class="center">Bring your design vision to life in clean, semantic HTML5, CSS, and JavaScript — with
+                    the Webflow Designer.</p>
+            </div>
+
+            <div class="conatainer4">
+                <h3 class="feature">CMS and Ecommerce</h3>
+                <p class="center">Build completely custom databases for dynamic content types, including online stores.
+                </p>
+            </div>
+
+            <div class="container5">
+                <h3 class="feature">Interactions</h3>
+                <p class="center">Easily create immersive interactions and animations.</p>
+            </div>
+        </section>
+
+        <section class="fifthsection">
+            <div class="container6">
+                <h2>Launch</h2>
+                <div class="text-2">Go live on a fast, reliable, and hassle-free hosting network that scales with your
+                    business — with a click.on-ready experiences without coding.</div>
+            </div>
+
+            <div class="image-top2">
+                <img src="https://assets.website-files.com/5fa1c3e22aeefa229c6a335f/5fa1e08d370f82cceaece745_Screenshot%202020-11-03%20at%2017.57.31-p-800.png"
+                    alt="" width="500px">
+            </div>
+        </section>
+
+        <section class="sixthsection">
+            <div class="container7">
+                <img src="https://assets.website-files.com/5fa1c3e22aeefa229c6a335f/5fa1dd2286b3076cfb442231_eb.svg"
+                    alt="" width="200px">
+
+                <div class="text-3">“When we launched the Amstel Live festival page, we were seeing 10,000 requests per
+                    second. Webflow Hosting handled it without a hitch.”</div>
+            </div>
+
+            <div class="container8">
+                <h3 class="feature">Powered by Amazon Web Services</h3>
+                <p class="center">Built to scale — on the same network as Netflix, Pinterest, Airbnb, Slack, and Adobe.
+                </p>
+            </div>
+
+            <div class="container9">
+                <h3 class="feature">99.9% uptime</h3>
+                <p class="center">So you don’t have to worry about your site going down.</p>
+            </div>
+
+            <div class="container10">
+                <h3 class="feature">Zero maintenance</h3>
+                <p class="center">No updates to run, packages to install, or headaches to deal with.</p>
+            </div>
+        </section>
+
+        <section class="seventhsection">
+            <div class="container11">
+                <h2>Grow</h2>
+                <div class="text-2">Create, launch, and iterate on new marketing campaigns without distracting your
+                    product team.</div>
+            </div>
+
+            <div class="image-top2">
+                <img src="https://assets.website-files.com/5fa1c3e22aeefa229c6a335f/5fa1e0db47e17710166963d1_Screenshot%202020-11-03%20at%2017.59.30-p-800.png"
+                    alt="" width="500px">
+            </div>
+        </section>
+
+        <section class="eigthsection">
+            <div class="container12">
+                <img src="https://assets.website-files.com/5fa1c3e22aeefa229c6a335f/5fa1dd226ee73d6d1d966a6e_Lattice.svg"
+                    alt="" width="200px">
+
+
+                <div class="text-3">“Webflow helped our brand team create a platform that enables all Zendesk employees
+                    to accurately and consistently represent the company in an easy, efficient and scalable way.”</div>
+            </div>
+
+            <div class="container13">
+                <h3 class="feature">Built-in SEO tools</h3>
+                <p class="center">Metadata controls, automatic XML sitemaps, easy 301 redirects, and canonical tags.</p>
+            </div>
+
+            <div class="container14">
+                <h3 class="feature">Flexible integrations</h3>
+                <p class="center">Connect your marketing tools with built-in integrations and the flexibility of custom
+                    code.</p>
+            </div>
+
+            <div class="container15">
+                <h3 class="feature">Easy content updates</h3>
+                <p class="center">Easily create and update pages — right on the page, with the Webflow Editor.</p>
+            </div>
+        </section>
+
+        <section class="ninthsection">
+            <div class="container16">
+                <h3>RESOURCES</h3>
+            </div>
+            <div class="container17">
+                <h2><b>Get up and running fast</b></h2>
+                <h3 class="center-2">Our University, blog, and showcase give you the education, insights, and
+                    inspiration you need to succeed with Webflow — and as a business.</h3>
+            </div>
+        </section>
+
+        <section class="tenthsection">
+            <div class="container18">
+                <img class="image-top4"
+                    src="https://assets.website-files.com/5fa1c3e22aeefa229c6a335f/5fa1ebf15a35c49d4692e983_5d48a04115f2c1f03bfa63cf_learn.svg"
+                    alt="" width="80px">
+
+                <h2>University</h2>
+                <p class="center-3">Browse hundreds of in-depth videos, courses, and guides to get up and running fast.
+                </p>
+            </div>
+
+            <div class="container19">
+                <img src="https://assets.website-files.com/5fa1c3e22aeefa229c6a335f/5fa1ebf1d7c72d39330a7e68_5d49f9b37838e523c7a9cd4e_showcase.svg"
+                    alt="" width="80px">
+
+                <h2>Showcase</h2>
+                <p class="center-3">Get inspired by the incredible websites built by members of the Webflow community.
+                </p>
+            </div>
+
+            <div class="container20">
+                <img src="https://assets.website-files.com/5fa1c3e22aeefa229c6a335f/5fa1ebf12aa2a9cb8664c676_5d48a041d6bb3e94e2a26675_read.svg"
+                    alt="" width="80px">
+
+                <h2>Blog</h2>
+                <p class="center-3">Explore our blog detailed articles on trends, inspiration, and best practices.</p>
+            </div>
+        </section>
+    </main>
+    <!-- Main(end) -->
+
+    <!-- Footer(start) -->
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <b>Free until you’re ready to launch</b>
+                <div class="text-4">Build your site for free and take as long as you need. (That’s right, no trial
+                    here.) Just add a site plan for more pages, and a custom domain when you’re ready for the world.
+                </div>
+
+                <div class="buttons2">
+                    <button class="btn3">Get Startet - it's free</button>
+                </div>
+            </div>
+
+    </footer>
+</body>
+
+</html>
